@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/najit"
+        android:layout_width="195dp"
+        android:layout_height="68dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="@+id/pripojit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="@+id/pripojit"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/pripojit"
+        android:layout_toLeftOf="@+id/pripojit"
+        android:layout_weight="1"
+        android:text="Najít" />
+
+    <Button
+        android:id="@+id/pripojit"
+        android:layout_width="200dp"
+        android:layout_height="68dp"
+        android:layout_alignParentStart="@+id/najit"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="@+id/najit"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="2dp"
+        android:layout_weight="1"
+        android:text="Připojit" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="709dp"
+        android:layout_above="@+id/najit"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="1dp"
+        android:layout_weight="2"
+        android:background="@drawable/uvodniappka" />
+
+</RelativeLayout>
